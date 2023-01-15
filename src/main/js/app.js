@@ -50,6 +50,18 @@ class Employee extends React.Component {
     }
 }
 
+/* loadFromServer(pageSize) {
+  follow(client, root, [
+    {rel: 'employees', params: {size: pageSize}}]
+    ).then(employeeCollection => {
+      return client({
+        method: 'GET',
+        path: employeeCollection.entity._links.profile.href,
+
+      })
+    })
+} */
+
 ReactDOM.render(
     <App/>,
     document.getElementById('react')
